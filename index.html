@@ -114,7 +114,7 @@
                   <div class="fill-btn-parent">
                     <button class="fill-btn2">
                       <div class="fill-btn3" id="fillBtnContainer">
-                        <div class="get-started1">Download</div>
+                        <a href="play.google.com"><div class="get-started1">Download</div></a>
                       </div>
                     </button>
                     <button class="fill-btn4" id="fillBtn1">
@@ -1575,14 +1575,14 @@
       var homeText = document.getElementById("homeText");
       if (homeText) {
         homeText.addEventListener("click", function () {
-          window.open("thefoodu.vercel.app");
+          window.open("index.html");
         });
       }
       
       var aboutText = document.getElementById("aboutText");
       if (aboutText) {
         aboutText.addEventListener("click", function () {
-          window.open("thefoodu.vercel.app/about.html");
+          window.open("about.html");
         });
       }
       
@@ -1630,17 +1630,10 @@
         });
       }
       
-      var fillBtnContainer = document.getElementById("fillBtnContainer");
-      if (fillBtnContainer) {
-        fillBtnContainer.addEventListener("click", function () {
-          window.open("play.google.com");
-        });
-      }
-      
       var fillBtn1 = document.getElementById("fillBtn1");
       if (fillBtn1) {
         fillBtn1.addEventListener("click", function () {
-          window.open("thefoodu.vercel.app/about.html");
+          window.open("about.html");
         });
       }
       
@@ -1651,20 +1644,6 @@
           if (anchor) {
             anchor.scrollIntoView({ block: "start", behavior: "smooth" });
           }
-        });
-      }
-      
-      var appStoreBackgrounds = document.getElementById("appStoreBackgrounds");
-      if (appStoreBackgrounds) {
-        appStoreBackgrounds.addEventListener("click", function () {
-          window.open("play.google.com");
-        });
-      }
-      
-      var rectangle = document.getElementById("rectangle");
-      if (rectangle) {
-        rectangle.addEventListener("click", function () {
-          window.open("apple.com/in/app-store");
         });
       }
       </script>
