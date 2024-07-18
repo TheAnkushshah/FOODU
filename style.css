@@ -193,9 +193,9 @@
 .navbar {
   align-self: stretch;
   flex-direction: row;
-  padding: 44px 358px var(--padding-6xs);
+  padding: 44px 290px var(--padding-6xs);
   box-sizing: border-box;
-  gap: 11.9px;
+  gap: 35px;
   max-width: 100%;
   z-index: 2;
   text-align: left;
