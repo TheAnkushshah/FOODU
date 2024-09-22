@@ -5,12 +5,12 @@
       {
         "src": "/FOODU.png",
         "type": "image/png",
-        "sizes": "192x192"
+        "sizes": "750x750"
       },
       {
         "src": "/apple-touch-icon.png",
         "type": "image/png",
-        "sizes": "512x512"
+        "sizes": "750x750"
       }
     ],
     "start_url": ".",
