@@ -3,17 +3,17 @@
     "name": "FOODU",
     "icons": [
       {
-        "src": "./public/FOODU.png",
+        "src": "FOODU.png",
         "type": "image/png",
         "sizes": "750x750"
       },
       {
-        "src": "./public/apple-touch-icon.png",
+        "src": "apple-touch-icon.png",
         "type": "image/png",
         "sizes": "750x750"
       }
     ],
-    "start_url": "",
+    "start_url": "index.html",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#142328"
