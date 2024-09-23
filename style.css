@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-image: url('https://marketplace.canva.com/EAFA7Zl1wfs/1/0/1600w/canva-pastel-red-green-illustrative-element-centric-video-background-Rs7EVOqIM2c.jpg'); /* Food-related image */
+  background-image: url('https://marketplace.canva.com/EAFA7Zl1wfs/1/0/1600w/canva-pastel-red-green-illustrative-element-centric-video-background-Rs7EVOqIM2c.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -21,19 +21,20 @@ body {
 .maintenance-container {
   background-image: url('https://images.unsplash.com/photo-1660067512022-132f6420d3f6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2t5JTIwYWVzdGhldGljfGVufDB8fDB8fHww');
   background-size: cover;
-  padding: 1rem 2rem 2.6rem;
+  padding: 4rem 2rem 2.6rem;
   border-radius: 15px;
   text-align: center;
   width: 100%;
   max-width: 450px;
   animation: fadeIn 1.5s ease-in-out;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  overflow-y: auto; /* Make container scrollable */
 }
 
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 2.8rem;
-  color: rgb(71, 207, 115); /* Darker shade */
+  color: rgb(71, 207, 115);
   margin-bottom: 1rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -41,45 +42,52 @@ h1 {
 p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: #fff; /* Slightly lighter shade */
+  color: #fff;
 }
 
 .about-link {
-  color: #ff5722; /* Kept as is */
+  color: #ff5722;
   font-weight: bold;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .about-link:hover {
-  color: #e64a19; /* Kept as is */
+  color: #e64a19;
 }
 
 /* Countdown Box Styles */
 .countdown-box {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 15px;
   margin: 2rem 0;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-#countdown {
-  margin: 0; /* Remove margin to center */
+  display: grid;
+  justify-content: center;
+  gap: 15px; /* Add some space between timer units */
+  flex-wrap: nowrap; /* Prevent countdown from wrapping into multiple lines */
 }
 
 .timer {
   display: inline-block;
-  margin: 0 10px;
+  margin: 12px 12px;
 }
 
 .time {
   font-size: 2.5rem;
-  color: #fff; /* Kept as white */
+  color: #fff;
 }
 
 .label {
-  color: #fff; /* Kept as white */
+  color: #fff;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .newsletter input[type="email"] {
@@ -89,22 +97,21 @@ p {
   border: none;
   font-size: 1rem;
   outline: none;
-  margin-right: 0.5rem;
 }
 
 .newsletter button {
   padding: 0.8rem 1.5rem;
   border-radius: 30px;
   border: none;
-  background-color: #ff5722; /* Kept as is */
-  color: white; /* Kept as is */
+  background-color: #ff5722;
+  color: white;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .newsletter button:hover {
-  background-color: #e64a19; /* Kept as is */
+  background-color: #e64a19;
   transform: scale(1.05);
 }
 
@@ -115,11 +122,11 @@ p {
 
 .social-media h3 {
   font-size: 1.2rem;
-  color: #fff; /* Slightly lighter shade */
+  color: #fff;
 }
 
 .social-media a {
-  color: #fff; /* Darker shade */
+  color: #fff;
   font-weight: bold;
   margin: 0 10px;
   text-decoration: none;
@@ -127,7 +134,7 @@ p {
 }
 
 .social-media a:hover {
-  color: #ff5722; /* Kept as is */
+  color: #ff5722;
 }
 
 /* Contact Information */
@@ -136,25 +143,25 @@ p {
 }
 
 .contact-info a {
-  color: #fff; /* Darker shade */
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
 
 .contact-info a:hover {
-  color: #ff5722; /* Kept as is */
+  color: #ff5722;
 }
 
 .contact-info p {
   font-size: 1rem;
-  color: #fff; /* Slightly lighter shade */
+  color: #fff;
 }
 
 /* Built with Love */
 .built-with-love {
   margin: 1.5rem 0;
   font-size: 1rem;
-  color: #fff; /* Slightly lighter shade */
+  color: #fff;
 }
 
 /* Add keyframes for smooth fade-in effect */
@@ -237,8 +244,9 @@ p {
   .maintenance-container {
     width: 100vw;
     height: 100vh;
-    border-radius: 0; /* Remove border-radius for full coverage */
+    border-radius: 0;
     padding: 1.5rem;
+    overflow-y: auto; /* Allow scrolling */
   }
 
   h1 {
@@ -251,6 +259,7 @@ p {
 
   .countdown-box {
     padding: 0.8rem;
+    gap: 5px; /* Reduce gap between timer elements */
   }
 
   .time {
@@ -258,7 +267,8 @@ p {
   }
 
   .newsletter input[type="email"] {
-    width: 67%;
+    width: 60%;
+    font-size: 0.9rem;
   }
 
   .newsletter button {
@@ -271,6 +281,22 @@ p {
   }
 
   .contact-info p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Adjust for very small screens (less than 366px) */
+@media only screen and (max-width: 366px) {
+  .countdown-box {
+    gap: 3px; /* Further reduce the gap to fit timer in one line */
+  }
+
+  .newsletter input[type="email"] {
+    width: 55%; /* Adjust email input size to fit better */
+  }
+
+  .newsletter button {
+    padding: 0.7rem 1rem;
     font-size: 0.8rem;
   }
 }
